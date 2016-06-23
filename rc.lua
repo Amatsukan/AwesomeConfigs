@@ -563,6 +563,7 @@ globalkeys = awful.util.table.join(
     -- Standard program
     awful.key({ modkey }, "t", function () awful.util.spawn(terminal) end),
     awful.key({ modkey }, "s", function () awful.util.spawn("spotfy") end),
+    awful.key({ modkey }, "[", function () awful.util.spawn("pulseaudio-equalizer toggle") end),
     awful.key({ modkey, "Control" }, "r",      awesome.restart),
     awful.key({ modkey, "Control"   }, "l",      awesome.quit),
 
